@@ -17,22 +17,29 @@
         color: black;
     }
     header {
-            background-color: #fce4ec; /* Rosado pálido */
-            padding: 20px; /* Aumentar el espacio interno */
+            background-color: #24aa3f; /* Rosado pálido */
+            padding: 100px; /* Aumentar el espacio interno */
             font-size: 24px; /* Aumentar el tamaño del texto */
     }
+    .card-img-top {
+    height: 300px; 
+    object-fit: cover;
+    }
+ 
+
+
 </style>
-  <title>KLIN</title>
+  <title>K L I N</title>
 </head>
 
-<body>
+<body style="background-color: rgb(255, 200, 132);">
   <div class="container">
     <header>
-      <h1 class="text-center text-light">KLIN</h1>
+      <h1 class="text-center text-light">K L I N</h1>
     </header>
     <main>
-      <section id="misprods" class="row">
-        </section>
+      <section id="misprods" class="d-flex row gap-4 justify-content-center my-5">
+      </section>
 
       <section>
         <h4>Tu carrito:</h4>
@@ -48,6 +55,8 @@
             </tbody>
         </table>
         <h4 id="total">Total a pagar $:</h4>
+        <button id="checkoutBtn" class="btn btn-success">Checkout</button>
+        <button id="vaciarBtn" class="btn btn-danger">Vaciar Carrito</button>
       </section>
     </main>
 
@@ -76,8 +85,9 @@
     </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="productoslista.js"></script>
-  <script src="logica.js"></script>
+  <script src="test.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 
